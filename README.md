@@ -3,7 +3,7 @@
 
 YoRHa is a work-in-progress network kernel debugger for the PlayStation 4. It supports basic operations such as setting breakpoints, reading/writing memory, manipulating thread states and so on. This tool is especially useful for debugging kernel payloads, exploit development, and gaining a deeper understanding of the PS4 kernel's internals.
 
-The debugger is designed to run in kernel mode on firmware version 9.0, requiring a kernel payload loader, such as Mira, to execute the payload at the kernel level.
+The debugger is designed to run in kernel mode requiring a kernel payload loader, such as Mira, to execute the payload at the kernel level.
 
 ## Capabilities:
 
@@ -47,6 +47,10 @@ The following firmware are currently supported:
 
 Porting the debugger is fairly straightforward, as the only firmware dependencies are the offsets, which can be found in the `include/firmware/` directory. Refer to [fw900.h](include/firmware/fw900.h) as an example. After adding support for a new firmware version, it's important to update the [offset.h](include/firmware/offset.h) header accordingly.
 
+## Supported firmwares
+
+- 9.0
+- 9.03
 
 # Installing 
 
