@@ -40,17 +40,12 @@ This debugger can be used to debug exploits, test kernel patches, and assist in 
 ## Supported firmware
 
 The following firmware are currently supported:
-* Fw 9.0
-* ...
+* 9.0
+* 9.03
 
 ## Porting
 
 Porting the debugger is fairly straightforward, as the only firmware dependencies are the offsets, which can be found in the `include/firmware/` directory. Refer to [fw900.h](include/firmware/fw900.h) as an example. After adding support for a new firmware version, it's important to update the [offset.h](include/firmware/offset.h) header accordingly.
-
-## Supported firmwares
-
-- 9.0
-- 9.03
 
 # Installing 
 
